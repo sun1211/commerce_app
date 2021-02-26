@@ -17,7 +17,7 @@ class SplashContent extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           Text(
-            "VIETNAM",
+            "SINGAPORE",
             style: TextStyle(
               fontSize: 36,
               color: kPrimaryColor,

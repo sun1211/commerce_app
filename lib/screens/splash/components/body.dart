@@ -1,5 +1,6 @@
 import 'package:commerce_app/components/default_button.dart';
 import 'package:commerce_app/constants.dart';
+import 'package:commerce_app/screens/sign_in/sign_in_screen.dart';
 import 'package:commerce_app/screens/splash/components/splash_content.dart';
 import 'package:commerce_app/size_config.dart';
 import 'package:flutter/material.dart';
@@ -13,12 +14,11 @@ class _BodyState extends State<Body> {
   int currentPage = 0;
   List<Map<String, String>> splashData = [
     {
-      "text": "Welcome to Tokoto, Let’s shop!",
+      "text": "Welcome to Vietnam, Let’s shop!",
       "image": "assets/images/splash_1.png"
     },
     {
-      "text":
-          "We help people conect with store \naround United State of America",
+      "text": "We help people conect with store \naround the world",
       "image": "assets/images/splash_2.png"
     },
     {
@@ -29,12 +29,13 @@ class _BodyState extends State<Body> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: Center(
+      child: Align(
+        alignment: Alignment.topCenter,
         child: SingleChildScrollView(
           child: Column(
             children: [
               Container(
-                height: SizeConfig.isPortrait ? 600 : 350,
+                height: SizeConfig.isPortrait ? 500 : 300,
                 child: PageView.builder(
                   onPageChanged: (value) {
                     setState(() {
@@ -49,7 +50,7 @@ class _BodyState extends State<Body> {
                 ),
               ),
               Container(
-                height: SizeConfig.isPortrait ? 320 : 120,
+                height: SizeConfig.isPortrait ? 200 : 120,
                 child: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 10),
                   child: Column(
@@ -70,7 +71,7 @@ class _BodyState extends State<Body> {
                       DefaultButton(
                         text: "Continue",
                         press: () {
-                          // Navigator.pushNamed(context, SignInScreen.routeName);
+                          Navigator.pushNamed(context, SignInScreen.routeName);
                         },
                       ),
                       Spacer(),

@@ -17,7 +17,7 @@ class SplashContent extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           Text(
-            "TOKOTO",
+            "VIETNAM",
             style: TextStyle(
               fontSize: 36,
               color: kPrimaryColor,
@@ -33,7 +33,7 @@ class SplashContent extends StatelessWidget {
           ),
           Image.asset(
             image,
-            width: 250,
+            width: SizeConfig.isPortrait ? 250 : 200,
           ),
         ],
       ),

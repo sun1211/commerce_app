@@ -35,3 +35,5 @@ flutter run -d chrome
 ![](https://raw.githubusercontent.com/sun1211/commerce_app/master/screenShot/Screenshot_1614330362.png)
 ![](https://raw.githubusercontent.com/sun1211/commerce_app/master/screenShot/Screenshot_1614330375.png)
 ![](https://raw.githubusercontent.com/sun1211/commerce_app/master/screenShot/Screenshot_1614331111.png)
+![](https://raw.githubusercontent.com/sun1211/commerce_app/master/screenShot/Screenshot_1614348244.png)
+![](https://raw.githubusercontent.com/sun1211/commerce_app/master/screenShot/Screenshot_1614348609.png)

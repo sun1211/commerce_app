@@ -1,6 +1,7 @@
 import 'package:commerce_app/constants.dart';
 import 'package:commerce_app/models/enums.dart';
 import 'package:commerce_app/screens/home/home_screen.dart';
+import 'package:commerce_app/screens/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -61,10 +62,10 @@ class CustomBottomNavBar extends StatelessWidget {
                       ? kPrimaryColor
                       : inActiveIconColor,
                 ),
-                // onPressed: () => Navigator.pushNamed(
-                //   context,
-                //   ProfileScreen.routeName,
-                // ),
+                onPressed: () => Navigator.pushNamed(
+                  context,
+                  ProfileScreen.routeName,
+                ),
               ),
             ],
           )),

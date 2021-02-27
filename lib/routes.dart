@@ -8,6 +8,8 @@ import 'package:commerce_app/screens/sign_up/sign_up_sreen.dart';
 import 'package:flutter/widgets.dart';
 import 'package:commerce_app/screens/splash/splash_screen.dart';
 
+import 'details/details_screen.dart';
+
 // We use name route
 // All our routes will be available here
 final Map<String, WidgetBuilder> routes = {
@@ -19,4 +21,5 @@ final Map<String, WidgetBuilder> routes = {
   CompleteProfileScreen.routeName: (context) => CompleteProfileScreen(),
   OtpScreen.routeName: (context) => OtpScreen(),
   HomeScreen.routeName: (context) => HomeScreen(),
+  DetailsScreen.routeName: (context) => DetailsScreen(),
 };

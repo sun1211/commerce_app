@@ -1,9 +1,9 @@
+import 'package:commerce_app/constants.dart';
+import 'package:commerce_app/details/details_screen.dart';
 import 'package:commerce_app/models/Product.dart';
+import 'package:commerce_app/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
-import '../constants.dart';
-import '../size_config.dart';
 
 class ProductCard extends StatelessWidget {
   const ProductCard({
@@ -23,11 +23,11 @@ class ProductCard extends StatelessWidget {
       child: SizedBox(
         width: getProportionateScreenWidth(width),
         child: GestureDetector(
-          // onTap: () => Navigator.pushNamed(
-          //   context,
-          //   DetailsScreen.routeName,
-          //   arguments: ProductDetailsArguments(product: product),
-          // ),
+          onTap: () => Navigator.pushNamed(
+            context,
+            DetailsScreen.routeName,
+            arguments: ProductDetailsArguments(product: product),
+          ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [

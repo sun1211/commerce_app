@@ -1,6 +1,6 @@
 import 'package:commerce_app/constants.dart';
-import 'package:commerce_app/details/details_screen.dart';
 import 'package:commerce_app/models/Product.dart';
+import 'package:commerce_app/screens/details/details_screen.dart';
 import 'package:commerce_app/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
